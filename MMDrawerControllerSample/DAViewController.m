@@ -7,6 +7,7 @@
 //
 
 #import "DAViewController.h"
+#import "MMDrawerController.h"
 
 @interface DAViewController ()
 
@@ -14,16 +15,38 @@
 
 @implementation DAViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Dispose of any resources that can be recreated.4
+}
+
+- (IBAction)ingresar:(UIButton *)sender {
+    NSLog(@"Ingresar");
+    
+    UIViewController * leftDrawer = [self.storyboard instantiateViewControllerWithIdentifier:@"menu"];
+    UIViewController * center = [self.storyboard instantiateViewControllerWithIdentifier:@"main"];
+    UIViewController * rightDrawer = [[UIViewController alloc] init];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:center];
+    
+    
+    MMDrawerController * drawerController = [[MMDrawerController alloc]
+                                             initWithCenterViewController:navigationController
+                                             leftDrawerViewController:leftDrawer
+                                             rightDrawerViewController:rightDrawer];
+    
+   
+    
+    [self presentViewController:drawerController animated:YES completion:nil];
+    
 }
 
 @end
