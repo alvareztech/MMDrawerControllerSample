@@ -8,6 +8,7 @@
 
 #import "DAViewController.h"
 #import "MMDrawerController.h"
+#import "MMDrawerVisualState.h"
 
 @interface DAViewController ()
 
@@ -31,9 +32,9 @@
 - (IBAction)ingresar:(UIButton *)sender {
     NSLog(@"Ingresar");
     
-    UIViewController * leftDrawer = [self.storyboard instantiateViewControllerWithIdentifier:@"menu"];
-    UIViewController * center = [self.storyboard instantiateViewControllerWithIdentifier:@"main"];
-    UIViewController * rightDrawer = [[UIViewController alloc] init];
+    UIViewController *leftDrawer = [self.storyboard instantiateViewControllerWithIdentifier:@"menu"];
+    UIViewController *center = [self.storyboard instantiateViewControllerWithIdentifier:@"main"];
+    UIViewController *rightDrawer = [self.storyboard instantiateViewControllerWithIdentifier:@"menu2"];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:center];
     
@@ -44,6 +45,9 @@
                                              rightDrawerViewController:rightDrawer];
     
    
+    
+    [drawerController setDrawerVisualStateBlock:[MMDrawerVisualState swingingDoorVisualStateBlock]];
+
     
     [self presentViewController:drawerController animated:YES completion:nil];
     

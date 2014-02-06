@@ -27,6 +27,7 @@
 		4E1E67F518A2847600B35AB5 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E67F118A2847600B35AB5 /* UIViewController+MMDrawerController.m */; };
 		4E1E67F818A28D8900B35AB5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E67F718A28D8900B35AB5 /* MenuViewController.m */; };
 		4E1E67FB18A29AAA00B35AB5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E67FA18A29AAA00B35AB5 /* MainViewController.m */; };
+		4E36DF2C18A3E73500B0CCDD /* Menu2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36DF2B18A3E73500B0CCDD /* Menu2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		4E1E67F718A28D8900B35AB5 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		4E1E67F918A29AAA00B35AB5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
 		4E1E67FA18A29AAA00B35AB5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		4E36DF2A18A3E73500B0CCDD /* Menu2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu2ViewController.h; sourceTree = "<group>"; };
+		4E36DF2B18A3E73500B0CCDD /* Menu2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,16 +134,18 @@
 		4E1E67B918A2844600B35AB5 /* MMDrawerControllerSample */ = {
 			isa = PBXGroup;
 			children = (
-				4E1E67F918A29AAA00B35AB5 /* MainViewController.h */,
-				4E1E67FA18A29AAA00B35AB5 /* MainViewController.m */,
-				4E1E67E818A2845F00B35AB5 /* Lib */,
 				4E1E67C518A2844600B35AB5 /* Main.storyboard */,
+				4E1E67CB18A2844600B35AB5 /* Images.xcassets */,
+				4E1E67E818A2845F00B35AB5 /* Lib */,
 				4E1E67C818A2844600B35AB5 /* DAViewController.h */,
 				4E1E67C918A2844600B35AB5 /* DAViewController.m */,
-				4E1E67CB18A2844600B35AB5 /* Images.xcassets */,
-				4E1E67BA18A2844600B35AB5 /* Supporting Files */,
+				4E1E67F918A29AAA00B35AB5 /* MainViewController.h */,
+				4E1E67FA18A29AAA00B35AB5 /* MainViewController.m */,
 				4E1E67F618A28D8900B35AB5 /* MenuViewController.h */,
 				4E1E67F718A28D8900B35AB5 /* MenuViewController.m */,
+				4E36DF2A18A3E73500B0CCDD /* Menu2ViewController.h */,
+				4E36DF2B18A3E73500B0CCDD /* Menu2ViewController.m */,
+				4E1E67BA18A2844600B35AB5 /* Supporting Files */,
 			);
 			path = MMDrawerControllerSample;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E36DF2C18A3E73500B0CCDD /* Menu2ViewController.m in Sources */,
 				4E1E67F418A2847600B35AB5 /* MMDrawerVisualState.m in Sources */,
 				4E1E67C018A2844600B35AB5 /* main.m in Sources */,
 				4E1E67F518A2847600B35AB5 /* UIViewController+MMDrawerController.m in Sources */,
@@ -507,6 +513,7 @@
 				4E1E67E418A2844600B35AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E1E67E518A2844600B35AB5 /* Build configuration list for PBXNativeTarget "MMDrawerControllerSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				4E1E67E718A2844600B35AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
