@@ -33,7 +33,7 @@
     NSLog(@"Ingresar");
     
     UIViewController *leftDrawer = [self.storyboard instantiateViewControllerWithIdentifier:@"menu"];
-    UIViewController *center = [self.storyboard instantiateViewControllerWithIdentifier:@"main"];
+    UIViewController *center = [self.storyboard instantiateViewControllerWithIdentifier:@"mainoption"];
     UIViewController *rightDrawer = [self.storyboard instantiateViewControllerWithIdentifier:@"menu2"];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:center];
@@ -43,6 +43,15 @@
                                              initWithCenterViewController:navigationController
                                              leftDrawerViewController:leftDrawer
                                              rightDrawerViewController:rightDrawer];
+    
+    
+    drawerController.openDrawerGestureModeMask ^=  MMOpenDrawerGestureModePanningCenterView;
+    drawerController.openDrawerGestureModeMask ^= MMOpenDrawerGestureModePanningNavigationBar;
+    
+    drawerController.closeDrawerGestureModeMask ^= MMCloseDrawerGestureModePanningNavigationBar;
+    drawerController.closeDrawerGestureModeMask ^= MMCloseDrawerGestureModePanningCenterView;
+    
+    drawerController.closeDrawerGestureModeMask ^= MMCloseDrawerGestureModeTapCenterView;
     
    
     

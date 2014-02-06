@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "MMDrawerController.h"
 
 @interface MenuViewController ()
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"viewDidLoad (Menu)");
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -41,6 +43,38 @@
 }
 
 #pragma mark - Table view data source
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Index pressed %i", (int) indexPath.row);
+
+    if (indexPath.row == 0) {
+        UIViewController *center = [self.storyboard instantiateViewControllerWithIdentifier:@"mainoption"];
+        UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:center];
+        [self.mm_drawerController setCenterViewController:nav withCloseAnimation:YES completion:nil];
+    } else if (indexPath.row == 1) {
+        UIViewController *center = [self.storyboard instantiateViewControllerWithIdentifier:@"option2"];
+        [self.mm_drawerController setCenterViewController:center withCloseAnimation:YES completion:nil];
+    } else if (indexPath.row == 2) {
+        UIViewController *center = [self.storyboard instantiateViewControllerWithIdentifier:@"option3"];
+        [self.mm_drawerController setCenterViewController:center withCloseAnimation:YES completion:nil];
+    } else if (indexPath.row == 3) {
+        UIViewController *center = [self.storyboard instantiateViewControllerWithIdentifier:@"option4"];
+        [self.mm_drawerController setCenterViewController:center withCloseAnimation:YES completion:nil];
+    }
+//    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:center];
+}
+
+
+-(MMDrawerController*)mm_drawerController{
+    UIViewController *parentViewController = self.parentViewController;
+    while (parentViewController != nil) {
+        if([parentViewController isKindOfClass:[MMDrawerController class]]){
+            return (MMDrawerController *)parentViewController;
+        }
+        parentViewController = parentViewController.parentViewController;
+    }
+    return nil;
+}
 
 
 /*

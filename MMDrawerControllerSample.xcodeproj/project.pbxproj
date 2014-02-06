@@ -28,6 +28,7 @@
 		4E1E67F818A28D8900B35AB5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E67F718A28D8900B35AB5 /* MenuViewController.m */; };
 		4E1E67FB18A29AAA00B35AB5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E67FA18A29AAA00B35AB5 /* MainViewController.m */; };
 		4E36DF2C18A3E73500B0CCDD /* Menu2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36DF2B18A3E73500B0CCDD /* Menu2ViewController.m */; };
+		4E36DF3018A411D600B0CCDD /* Option2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E36DF2F18A411D600B0CCDD /* Option2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		4E1E67FA18A29AAA00B35AB5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		4E36DF2A18A3E73500B0CCDD /* Menu2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu2ViewController.h; sourceTree = "<group>"; };
 		4E36DF2B18A3E73500B0CCDD /* Menu2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu2ViewController.m; sourceTree = "<group>"; };
+		4E36DF2E18A411D600B0CCDD /* Option2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option2ViewController.h; sourceTree = "<group>"; };
+		4E36DF2F18A411D600B0CCDD /* Option2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				4E1E67F718A28D8900B35AB5 /* MenuViewController.m */,
 				4E36DF2A18A3E73500B0CCDD /* Menu2ViewController.h */,
 				4E36DF2B18A3E73500B0CCDD /* Menu2ViewController.m */,
+				4E36DF2E18A411D600B0CCDD /* Option2ViewController.h */,
+				4E36DF2F18A411D600B0CCDD /* Option2ViewController.m */,
 				4E1E67BA18A2844600B35AB5 /* Supporting Files */,
 			);
 			path = MMDrawerControllerSample;
@@ -302,6 +307,7 @@
 				4E1E67F818A28D8900B35AB5 /* MenuViewController.m in Sources */,
 				4E1E67FB18A29AAA00B35AB5 /* MainViewController.m in Sources */,
 				4E1E67F318A2847600B35AB5 /* MMDrawerController.m in Sources */,
+				4E36DF3018A411D600B0CCDD /* Option2ViewController.m in Sources */,
 				4E1E67F218A2847600B35AB5 /* MMDrawerBarButtonItem.m in Sources */,
 				4E1E67CA18A2844600B35AB5 /* DAViewController.m in Sources */,
 				4E1E67C418A2844600B35AB5 /* DAAppDelegate.m in Sources */,
